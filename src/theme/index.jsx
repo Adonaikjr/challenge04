@@ -1,13 +1,17 @@
 export const defaultTheme = {
-    white: '#fff',
-    black: '#000',
+  white: "#fff",
+  black: "#000",
 
+  Marineblue: "#02295a",
+  Purplishblue: "#473dff",
+  Pastelblue: "#adbeff",
+  Lightblue: "#bfe2fd",
+  Strawberryred: "#ed3548",
 
-    Marineblue: 'hsl(213, 96 %, 18 %)',
-    Purplishblue: 'hsl(243, 100 %, 62 %)',
-    Pastelblue: 'hsl(228, 100 %, 84 %)',
-    Lightblue: 'hsl(206, 94 %, 87 %)',
-    Strawberryred: 'hsl(354, 84 %, 57 %)',
+  Coolgray: "	#9699ab",
+  Lightgray: "	#d6d9e6",
+  Magnolia: "	#f0f6ff",
+  Alabaster: "	#fafbff",
 
-
-}
+  fontUbuntu: "Ubuntu, sans-serif",
+};

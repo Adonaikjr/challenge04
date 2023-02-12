@@ -1,20 +1,63 @@
-import { ContainerSidebar } from "./styled"
+import { NavLink } from "react-router-dom";
+import { ContainerSidebar, Nav } from "./styled";
 
 export function Sidebar() {
-    return (
-        <ContainerSidebar>
-            
-            Step 1
-            Your info
+  let activeStyle = {
+    backgroundColor: "#bfe2fd",
+  };
 
-            Step 2
-            Select plan
 
-            Step 3
-            Add-ons
+  return (
+    <ContainerSidebar>
+      <Nav>
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              1
+            </NavLink>
+            <p>
+              Step1<strong>YOUR INFO</strong>
+            </p>
+          </li>
 
-            Step 4
-            Summary
-        </ContainerSidebar>
-    )
+          <li>
+            <NavLink
+              to="/select-plan"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              2
+            </NavLink>
+            <p>
+              Step 2<strong>SELECT PLAN</strong>
+            </p>
+          </li>
+          <li>
+            <NavLink
+              to="/addons"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              3
+            </NavLink>
+            <p>
+              Step 3<strong>ADD-ONS</strong>
+            </p>
+          </li>
+          <li>
+            <NavLink
+              to="/summary"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              4
+            </NavLink>
+            <p>
+              Step 4<strong>SUMMARY</strong>
+            </p>
+          </li>
+        </ul>
+      </Nav>
+    </ContainerSidebar>
+  );
 }
